@@ -1,7 +1,7 @@
 <div class="container mt-3">
   <h1 class="mb-3"><%= @restaurant.name %></h1>
   <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <img src="https://source.unsplash.com/random/?restaurant" />
     <div class="card-product-infos">
       <p>Address: <%= @restaurant.address %></p>
       <p>Category: <%= @restaurant.category %></p>
@@ -19,7 +19,7 @@
   <h4 class="mt-5">All reviews:</h2>
   <% @restaurant.reviews.each do |review| %>
     <div class="notification mt-3">
-      <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" />
+      <img src='https://source.unsplash.com/random/?person' class="avatar-large"/>
       <div class="notification-content">
         <p><small><%= review.rating %>/5</small></p>
         <p><%= review.content %></p>
